@@ -2,21 +2,19 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Security.Cryptography;
 using System.Threading;
+
+//класс, который хранит все функции библиотеки
 namespace RecipesModul
 {
     public class RecipeManager
     {
-        private List<Recipe> recipes = new List<Recipe>();
+        private List<Recipe> recipes = new List<Recipe>(); //объявление листа, в который будут добавляться рецепты
 
 
         public void AddRecipe(Recipe recipe)
         {
             try
             {
-                if (string.IsNullOrEmpty(recipe.Name) || string.IsNullOrEmpty(recipe.Type) || recipe.Ingredients == null || recipe.PreparationTime == 0 || string.IsNullOrEmpty(recipe.Difficulty))
-                {
-                    throw new Exception("Ошибка при добавлении рецепта.");
-                }
                 else
                 {
                     recipe.Id = recipes.Count > 0 ? recipes.Max(r => r.Id) + 1 : 1;
@@ -89,20 +87,9 @@ namespace RecipesModul
            
             catch (Exception ex)
             {
-                if (updatedRecipe == null)
-                {
-
-                    throw new ArgumentNullException(nameof(updatedRecipe), "Обновленный рецепт не может быть null.");
-                }
-                var existingRecipe = recipes.FirstOrDefault(r => r.Id == updatedRecipe.Id);
-                if (existingRecipe == null)
-                {
-                    throw new KeyNotFoundException($"Рецепт с ID {updatedRecipe.Id} не найден.");
-                }
-                else
-                {
+               
                     throw new Exception($"Ошибка при обновлении рецепта с ID {updatedRecipe.Id}.", ex);
-                }
+                
             }
         }
 
@@ -218,10 +205,6 @@ namespace RecipesModul
                 throw new Exception($"Ошибка при получении рецептов по времени приготовления.");
             }
 
-        
-            
-            
-            
         }
     }
 }
