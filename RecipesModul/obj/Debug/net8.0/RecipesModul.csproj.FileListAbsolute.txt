@@ -1,0 +1,11 @@
+C:\Users\9ksen\source\repos\RecipesModul\bin\Debug\net8.0\RecipesModul.deps.json
+C:\Users\9ksen\source\repos\RecipesModul\bin\Debug\net8.0\RecipesModul.dll
+C:\Users\9ksen\source\repos\RecipesModul\bin\Debug\net8.0\RecipesModul.pdb
+C:\Users\9ksen\source\repos\RecipesModul\obj\Debug\net8.0\RecipesModul.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\9ksen\source\repos\RecipesModul\obj\Debug\net8.0\RecipesModul.AssemblyInfoInputs.cache
+C:\Users\9ksen\source\repos\RecipesModul\obj\Debug\net8.0\RecipesModul.AssemblyInfo.cs
+C:\Users\9ksen\source\repos\RecipesModul\obj\Debug\net8.0\RecipesModul.csproj.CoreCompileInputs.cache
+C:\Users\9ksen\source\repos\RecipesModul\obj\Debug\net8.0\RecipesModul.dll
+C:\Users\9ksen\source\repos\RecipesModul\obj\Debug\net8.0\refint\RecipesModul.dll
+C:\Users\9ksen\source\repos\RecipesModul\obj\Debug\net8.0\RecipesModul.pdb
+C:\Users\9ksen\source\repos\RecipesModul\obj\Debug\net8.0\ref\RecipesModul.dll
